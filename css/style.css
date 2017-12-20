@@ -1,0 +1,654 @@
+*{
+margin:0 ;
+padding:0;
+}
+ul,li{
+	margin:0px;
+	padding:0px;
+	}
+h3{
+	color:#0b5baf
+}
+.head-logo{
+	width:100%;
+	float:left;
+}
+.logo{
+	float:right;
+}
+.header{
+	width: 100%;
+    float: left;
+    margin-top: -35px;
+}
+.cus-per{
+	font-style:italic;
+	font-size:15px;
+}
+
+.cus-nav li{
+	display:inline-block !important;
+	padding:0 6px;
+}
+.cus-nav li a{
+	border:1px solid #000;
+	/* border-radius:10px; */
+	color:#0072b5;
+	padding:10px 20px;
+}
+.cus-nav li a:hover{
+	background:#000;
+	border: 1px solid #0072b5;
+	color:#fff;
+}
+.cus-nav li a.active{
+	background:#000;
+	border: 1px solid #0072b5;
+	color:#fff;
+}
+.content{
+	width:100%;
+	float:left;
+	margin-top:15px;
+}
+
+.user-link{
+	left: 5%;
+    float: left;
+    position: relative;
+}
+.user-link li{
+	display:inline-block;
+	padding:0 10px;
+}
+.cus-log{
+	border: 1px solid #000;
+    border-radius: 20px;
+	color:#000;
+}
+.cus-log-btn{
+	border:1px solid #000;
+	border-radius:20px;
+	color:#000;
+	padding:8px 20px;
+	text-decoration:none;
+	background:none;
+}
+.cus-log-btn:hover{
+	background:#bac9ff;
+}
+.user-link li a{
+	border:1px solid #000;
+	border-radius:20px;
+	color:#000;
+	padding:9px 20px;
+	text-decoration:none;
+}
+.user-link li a:hover{
+	background:#bac9ff;
+}
+.cus-row{
+	margin-top:50px;
+}
+.about-heading{
+	padding-bottom:17px;
+}
+.footer{
+	width:100%;
+	float:left;
+	padding:20px 0;
+}
+.footer p{
+	font-size: 13px;
+}
+.cus-gender{
+	padding-right:15px;
+}
+.cus-input{
+	border: 1px solid #000;
+}
+
+
+
+
+
+
+
+/*****************************/
+/* Trapezoid, based on http://lea.verou.me/2013/10/slanted-tabs-with-css-3d-transforms/ */
+/*****************************/ 
+
+.tabs-style-tzoid {
+	max-width: 1200px;
+}
+
+.tabs-style-tzoid nav {
+	padding: 0 1em;
+}
+
+.tabs-style-tzoid nav ul li {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tabs-style-tzoid nav ul li a {
+	padding: 0 1.5em 0 0.3em;
+	color: #000;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+	text-decoration:none;
+	width:280px;	
+}
+
+@media screen and (max-width: 54em) {
+	.tabs-style-tzoid nav ul li a {
+		padding: 0 0.5em 0 0.3em;
+		
+	}
+}
+
+.tabs-style-tzoid nav ul li a:hover,
+.tabs-style-tzoid nav ul li a:focus {
+	color: #fff;
+}
+
+.tabs-style-tzoid nav ul li.tab-current a,
+.tabs-style-tzoid nav ul li.tab-current a:hover {
+	color: #000;
+}
+
+.tabs-style-tzoid nav ul li a span {
+	font-weight: 500;
+	font-size: 0.75em;
+	
+}
+
+.tabs-style-tzoid nav ul li a::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 1px;
+	left: 0;
+	z-index: -1;
+	outline: 1px solid transparent;
+	border-radius: 10px 10px 0 0;
+	background: #aaa;
+	box-shadow: inset 0 -3px 3px rgba(0,0,0,0.05);
+	content: '';
+	-webkit-transform: perspective(5px) rotateX(0.93deg) translateZ(-1px);
+	transform: perspective(5px) rotateX(0.93deg) translateZ(-1px);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border:1px solid #000;
+	border-bottom:0;
+}
+
+.tabs-style-tzoid nav ul li.tab-current a::after {
+	background: #fff;
+	box-shadow: none;
+	border-bottom-color:#fff;
+}
+.tabs-style-tzoid .content-wrap{
+	background: #fff;
+	box-shadow: none;
+	border:1px solid #000;
+	border-radius: 5px 5px 10px 10px;
+    margin-top: -4px;
+	width: 100%;
+    float: left;
+}
+
+
+/* ============tab end ===================*/
+
+
+
+
+
+#custom-search-input {
+        margin:0;
+        margin-top: 10px;
+        padding: 0;
+		width:100%;
+		float:left;
+    }
+ 
+    #custom-search-input .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    #custom-search-input button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color:#D9230F;
+		z-index:10;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+	.cus-input-grp{
+		float:right !important;
+	}
+	.events{
+		width:100%;
+		float:left;
+		border:1px solid #000;
+		margin:15px 0;
+		border-radius: 5px 5px 5px 5px;
+		padding:15px;
+	}
+	.cus-table{
+		width:100%;
+	}
+	.cus-table th {
+		text-align:left;
+		font-size:14px;
+		font-weight:600;
+	}
+	.cus-tbody td{
+		text-align:center;
+		padding:10px 0; 
+		font-size:14px;
+	}
+	
+	.cus-table td{
+		font-size:14px;
+		text-align:left;
+	}
+	.cus-tbody tr{
+		border-bottom:1px solid #ddd;
+	}
+	.select-event{
+		width:100%;
+		float:left;
+		border:1px solid #000;
+		border-radius: 5px 5px 5px 5px;
+		padding:20px 60px;
+	}
+	.cus-event-cate{
+		background: #000;
+		padding: 10px;
+		color: #fff;
+	}
+	.cus-event-cate li{
+		display: inline-block;
+		width: 19%;
+		text-align:center;
+	}
+	.cus-event-cate li a{
+		color: #fff;
+		text-decoration:none;
+	}
+	.cus-payment-type{
+		padding-right:20px;
+	}
+	
+	.cus-book{
+		float:right;
+	}
+	.cus-book a{
+		padding:5px 20px;
+	}
+	.cus-faq{
+		width:100%;
+		float:left;
+		border:1px solid #000;
+		border-radius: 5px 5px 5px 5px;
+		padding:20px 60px;
+		overflow-y: scroll;
+		height:350px;
+	}
+	.cus-faq h4{
+		color:#0066d0;
+	}
+	.cus-my-account{
+		width:100%;
+		float:left;
+		border:1px solid #000;
+		border-radius: 5px 5px 5px 5px;
+		padding:20px 60px;
+	}
+	.host-ac{
+		margin-top:15px;
+	}
+	.cus-rat{
+		float:left;
+	}
+	.cus-rateings{
+		float:left;
+	}
+/* @media screen and (min-width: 1200px){
+	.my-nav{
+		left:6%;
+	}
+} */
+
+
+
+
+.table-fixed thead {
+  width: 97%;
+}
+.table-fixed tbody {
+  height: 230px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  /*display: block;*/
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+
+
+
+.panel-default>.panel-heading {
+  color: #333;
+  background-color: #fff;
+  border-color: #e4e5e7;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.panel-default>.panel-heading a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration:none;
+}
+
+.panel-default>.panel-heading a:after {
+  content: "";
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: right;
+  transition: transform .25s linear;
+  -webkit-transition: -webkit-transform .25s linear;
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"] {
+  background-color: #ddd;
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"]:after {
+  content: "\2212";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.panel-default>.panel-heading a[aria-expanded="false"]:after {
+  content: "\002b";
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.accordion-option {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin: 15px 0;
+}
+
+.accordion-option .title {
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion-option .toggle-accordion {
+  float: right;
+  font-size: 16px;
+  color: #6a6c6f;
+}
+
+.accordion-option .toggle-accordion:before {
+  content: "Expand All";
+}
+
+.accordion-option .toggle-accordion.active:before {
+  content: "Collapse All";
+}
+
+
+.cus-check-box input[type=radio] {
+  border: 1px solid #000;
+  padding: 0.5em;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  margin:0 6px 0 0;
+}
+
+.cus-check-box input[type=radio]:checked {
+  background: url(https://d30y9cdsu7xlg0.cloudfront.net/png/10734-200.png) no-repeat center center;
+  background-size: 9px 9px;
+ 
+  
+}
+
+.cus-check-box input[type=radio]:focus {
+  outline-color: transparent;
+}
+
+.dropdown {
+	cursor:pointer;
+}
+.dropdown li{
+	display:block;
+	width:100%;
+}
+.dropdown li a{ 
+	color:#fff;
+}
+.dropdown-menu{
+	left: 17%;
+	background:#333;
+	border-radius:0;
+}
+/*******************Rajdeep Css Start**********************/
+.criteria{
+	margin-top:20px;
+	}
+.criteria li{
+	width: 19%;
+	float:left;
+	font-size:18px;
+	text-align:center;
+	color:#000;
+	list-style-type:none;
+	line-height: 36px;
+    font-weight: bold;
+	}
+	
+input[type="radio"], input[type="checkbox"] {
+    margin: 4px 4px 0 0;
+}
+label {
+    margin-left: 6px;
+    text-align: left;
+	font-weight: normal;
+}
+.btn-success {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color: #fff;
+	width:120px;
+	font-size:18px;
+	text-transform:capitalize;
+	position: relative;
+    top: -3px;
+}
+.form-group .btn-success{
+	background-color: #5cb85c;
+    border-color: #4cae4c;
+    color: #fff;
+	width: auto;
+	font-size:18px;
+	text-transform:capitalize;
+	}
+.criteria li:nth-child(3){
+	margin-right:3px;
+	}
+.bold {
+    font-size: 22px;
+    font-weight: bold;
+}
+.multiselect-new {
+    width: 80%;
+}
+
+/*******************Select Check Box Css Start**********************/
+
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #dadada;
+    display: none;
+    position: absolute;
+    width: 22%;
+    z-index: 10;
+	color: #000;
+}
+.selectBoxtwo {
+    position: relative;
+	top:-12px;
+}
+#checkboxes label {
+  display: block;
+}
+.events{
+	font-size:20px;
+	font-weight:bold;
+	color:#000;
+	}
+.marg-bot{
+	margin-bottom:5px;
+	}
+.form-control.two {
+    position: relative;
+    top: -45px;
+}
+.checkboxes-two{
+	top:45px !important;
+	
+	}
+.selectBoxthree{
+	top:-45px !important;
+	position:relative;
+	}
+.form-control{
+	font-weight:bold;
+	color: #000;
+	}
+.form-control::-moz-placeholder {
+    color: #000 !important;
+	font-weight:bold;
+}
+.form-control::-webkit-input-placeholder{
+    color: #000 !important;
+	font-weight:bold;
+}
+.table-condensed{
+	background:#fff;
+	}
+.form-group-ex {
+    margin-bottom: 15px;
+    position: relative;
+    top: -19px;
+    left: -39px;
+}
+tbody tr{
+	cursor:pointer;
+	}
+.btn-marg {
+    margin-top:5px;
+    
+}
+.btn-marg .btn-success{
+	width:auto;
+	}
+	
+	.jconfirm-box-container.jconfirm-animated.col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1.jconfirm-no-transition {
+    width: 40%;
+    height: auto;
+}
+
+.jconfirm-content-pane tr{
+	 cursor: pointer;
+    height: 33px;
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px !important;
+	color:#FFD700;
+    -moz-osx-font-smoothing: grayscale;
+}
+div#stars-existing {
+    padding-left: 15px;
+}
+
+/*******************Select Check Box Css Close**********************/
+
+/*******************Rajdeep Css Close**********************/
